@@ -14,15 +14,41 @@ screenshot fornito in consegna.
   se il resto è 0 (numero pari) se il resto è 1 (numero dispari)
 */
 
-for (let i = 0; i <= 100; i++){
+let box = document.getElementById('box')
+
+
+for (let i = 1; i <= 100; i++){
+
+    let divBox = document.createElement('div')
+    divBox.classList.add("box-js")
+
    if ( i % 3 === 0 && i % 5 === 0){
+
+    divBox.innerHTML += `FizzBuzz`;
+    divBox.classList.add('aqua');
     console.log('FizzBuzz');
+
    } else if ( i % 3 === 0){
+
+    divBox.innerHTML += `Fizz`;
+    divBox.classList.add('magenta');
     console.log('Fizz');
+
+
    } else if ( i % 5 === 0){
+
+    divBox.innerHTML += `Buzz`;
+    divBox.classList.add('blue');
     console.log('Buzz');
+
    } else{
+
+    divBox.innerHTML += `${i}`;
+    divBox.classList.add('honey');
     console.log(i);
    }
+
+   box.append(divBox);
+
 }
 
