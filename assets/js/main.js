@@ -25,26 +25,26 @@ for (let i = 1; i <= 100; i++){
    if ( i % 3 === 0 && i % 5 === 0){
 
     divBox.innerHTML += `FizzBuzz`;
-    divBox.classList.add('aqua');
+  divBox.classList.add('aqua', 'd-flex', 'align-items-center', 'justify-content-center');
     console.log('FizzBuzz');
 
    } else if ( i % 3 === 0){
 
     divBox.innerHTML += `Fizz`;
-    divBox.classList.add('magenta');
+    divBox.classList.add('magenta', 'd-flex', 'align-items-center', 'justify-content-center');
     console.log('Fizz');
 
 
    } else if ( i % 5 === 0){
 
     divBox.innerHTML += `Buzz`;
-    divBox.classList.add('blue');
+    divBox.classList.add('blue', 'd-flex', 'align-items-center', 'justify-content-center');
     console.log('Buzz');
 
    } else{
 
     divBox.innerHTML += `${i}`;
-    divBox.classList.add('honey');
+    divBox.classList.add('honey', 'd-flex', 'align-items-center', 'justify-content-center');
     console.log(i);
    }
 
